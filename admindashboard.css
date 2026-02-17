@@ -1,0 +1,94 @@
+body { 
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    color: #111;
+
+    /* Green → Orange blended background (static) */
+    background: linear-gradient(135deg, #27ae60 0%, #2ecc71 35%, #ffa500 100%);
+    background-attachment: fixed;
+}
+
+/* Optional: animated gradient (uncomment to enable)
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  color: #111;
+  background: linear-gradient(135deg, #27ae60, #2ecc71, #ffa500);
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+*/
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background: #333;
+    color: white;
+    float: left;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 15px 0;
+}
+
+.main {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* Cards layout and visual */
+.cards {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+  margin-bottom: 20px;
+}
+.card {
+    flex: 1;
+    background: rgba(255,255,255,0.95);
+    color: #111;
+    border-radius: 8px;
+    padding: 18px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+    text-align: center;
+}
+.card h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  color: #444;
+}
+.card .stat {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Nav item styles */
+.sidebar .nav-item {
+  padding: 8px 10px;
+  border-radius: 4px;
+  transition: background .15s;
+  cursor: pointer;
+}
+.sidebar .nav-item:hover {
+  background: rgba(255,255,255,0.06);
+}
+.sidebar .nav-item.active {
+  background: rgba(255,255,255,0.12);
+  font-weight: 600;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admindashboard.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Admin</h2>
+        <ul>
+            <li class="nav-item active" data-view="dashboard">Dashboard</li>
+            <li class="nav-item" data-view="users">Users</li>
+            <li class="nav-item" data-view="reports">Reports</li>
+            <li class="nav-item" data-view="settings">Settings</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+        <header>
+            <h1>Dashboard</h1>
+        </header>
+
+        <section class="cards">
+            <div class="card">
+                <h3>Total Users</h3>
+                <p class="stat" id="totalUsers">0</p>
+            </div>
+            <div class="card">
+                <h3>Revenue</h3>
+                <p class="stat" id="totalRevenue">$0</p>
+            </div>
+            <div class="card">
+                <h3>Orders</h3>
+                <p class="stat" id="totalOrders">0</p>
+            </div>
+        </section>
+
+        <section class="content">
+            <p>Welcome to Admin Panel</p>
+        </section>
+    </div>
+
+    <script src="admindashboard.js"></script>
+</body>
+</html>
